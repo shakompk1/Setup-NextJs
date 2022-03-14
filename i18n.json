@@ -1,0 +1,8 @@
+{
+  "locales": ["az", "en"],
+  "defaultLocale": "az",
+  "pages": {
+    "*": [],
+    "/": ["index"]
+  }
+}

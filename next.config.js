@@ -1,6 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+const nextTranslate = require('next-translate')
+const withPlugins = require('next-compose-plugins')
 
-module.exports = nextConfig
+module.exports = withPlugins([nextTranslate], {
+  i18n: {
+    localeDetection: true,
+  },
+
+  baseUrl: 'src',
+  publicRuntimeConfig: {},
+})
