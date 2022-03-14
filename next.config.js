@@ -3,7 +3,7 @@ const withPlugins = require('next-compose-plugins')
 
 module.exports = withPlugins([nextTranslate], {
   i18n: {
-    localeDetection: true,
+    localeDetection: false,
   },
 
   baseUrl: 'src',

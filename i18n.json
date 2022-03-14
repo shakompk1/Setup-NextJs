@@ -1,5 +1,5 @@
 {
-  "locales": ["az", "en"],
+  "locales": ["az", "uk"],
   "defaultLocale": "az",
   "pages": {
     "*": [],
