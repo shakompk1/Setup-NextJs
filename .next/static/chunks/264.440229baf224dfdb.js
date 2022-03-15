@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[264],{3264:function(e){e.exports={welcome:"\u041f\u0440\u0438\u0432\u0435\u0442"}}}]);
