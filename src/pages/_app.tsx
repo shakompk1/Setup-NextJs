@@ -1,11 +1,11 @@
 import * as React from 'react'
-import type { AppProps } from 'next/app'
+import { AppProps } from 'next/app'
 
 import { ThemeProvider } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
 import theme from 'theme/index'
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />

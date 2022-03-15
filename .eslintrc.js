@@ -23,18 +23,17 @@ module.exports = {
         'plugin:react/recommended', // React rules
         'plugin:react-hooks/recommended', // React hooks rules
         'plugin:jsx-a11y/recommended', // Accessibility rules
-        'prettier/@typescript-eslint', // Prettier plugin
-        'plugin:prettier/recommended', // Prettier recommended rules
+        'plugin:prettier/recommended', // Pretti
       ],
       rules: {
-        'no-console': ['error', { 'allow': ['warn', 'error'] } ],
+        'no-console': ['error', { allow: ['warn', 'error'] }],
         'react/prop-types': 'off', // We will use TypeScript's types for components props instead
         'react/react-in-jsx-scope': 'off', // No need to import React with Next.js
         'jsx-a11y/anchor-is-valid': 'off', // This rule is not compatible with how Next.js's <Link />
         '@typescript-eslint/no-unused-vars': ['error'],
         '@typescript-eslint/ban-ts-comment': 'off',
         'react-hooks/exhaustive-deps': 'off',
-        "@typescript-eslint/no-explicit-any": "off",
+        '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/explicit-function-return-type': [
           // I suggest this setting for requiring return types on functions only where usefull
           'warn',
