@@ -1,5 +1,5 @@
 export enum Language {
-  uk = 'uk',
+  uk = 'az',
   ru = 'ru',
 }
 
@@ -8,6 +8,9 @@ export enum ThemeStyle {
   light = 'light',
 }
 
-export default {
-  Language,
+export enum HTTPTypes {
+  get = 'get',
+  post = 'post',
+  delete = 'delete',
+  put = 'put',
 }
