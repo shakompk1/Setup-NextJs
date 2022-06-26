@@ -1,4 +1,4 @@
-import * as React from 'react'
+import { useEffect } from 'react'
 import { AppProps } from 'next/app'
 
 //redux-toolkit,redux saga
@@ -11,6 +11,12 @@ import theme from 'theme/index'
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   const store = useStore()
+
+  useEffect(() => {
+    const jssStyles = document.querySelector('#jss-server-side')
+    jssStyles?.parentElement?.removeChild(jssStyles)
+  }, [])
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
